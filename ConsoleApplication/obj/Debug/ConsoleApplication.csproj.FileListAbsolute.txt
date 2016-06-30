@@ -14,3 +14,11 @@ C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\ope
 C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\bin\Debug\OpenTK.xml
 C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
 C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\bin\Debug\OpenTK.dll
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\bin\Debug\OpenTK.dll
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\bin\Debug\OpenTK.xml
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Users\a120002\Documents\GitHub\fundo\ConsoleApplication\obj\Debug\ConsoleApplication.pdb

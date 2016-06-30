@@ -27,11 +27,11 @@ namespace ConsoleApplication
 
         private static void Game_UpdateFrame(object sender, FrameEventArgs e)
         {
-            //var game = (GameWindow)sender;
-            //if (game.Keyboard[Key.Escape])
-            //{
-            //    game.Exit();
-            //}
+            var game = (GameWindow)sender;
+            if (game.Keyboard[Key.Escape])
+            {
+                game.Exit();
+            }
         }
 
         private static void Game_Resize(object sender, EventArgs e)
@@ -43,11 +43,15 @@ namespace ConsoleApplication
         static float theta = 0.0f;
         static float x = 0.0f;
         static float y = 0.0f;
+        
 
         private static void Game_RenderFrame(
             object sender, FrameEventArgs e)
-        {            
-            GL.ClearColor(Color.Blue);
+        {    Random rnd = new Random();
+            int r = rnd.Next(0, 255);
+            int g = rnd.Next(0, 255);
+            int b = rnd.Next(0, 255);         
+            GL.ClearColor(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
             GL.Clear(
                 ClearBufferMask.ColorBufferBit | 
                 ClearBufferMask.DepthBufferBit
@@ -62,53 +66,78 @@ namespace ConsoleApplication
             //    GL.Vertex2(i * 0.01, 0.5f);
             //}
             //GL.End();
+            if (x > 1.5f)
+            {
+                x = 0.001f;
+            }
+           
+            // g, h;
 
             x += 0.001f;
-            y -= 0.001f;
-            GL.Begin(BeginMode.TriangleFan);
-            GL.Color3(Color.Red);
-            GL.Vertex2(0.0 + x, 0.5);
-            GL.Vertex2(-0.4 + x, 0.0);
-            GL.Vertex2(0.4 + x, 0.0);
-            GL.Color3(Color.Yellow);
-            GL.Vertex2(0.0 + x, -0.5);
-            GL.Vertex2(-0.4 + x, 0.0);
-            GL.Vertex2(0.4 + x, 0.0);
-            GL.End();
-            //GL.Flush();
-            GL.Begin(BeginMode.TriangleFan);
-            GL.Color3(Color.Red);
-            GL.Vertex2(0.0, 0.5 + x);
-            GL.Vertex2(-0.4 , 0.0 + x);
-            GL.Vertex2(0.4 , 0.0 + x);
-            GL.Color3(Color.Yellow);
-            GL.Vertex2(0.0 , -0.5 + x);
-            GL.Vertex2(-0.4 , 0.0 + x);
-            GL.Vertex2(0.4 , 0.0 + x);
-            GL.End();
+            y += 0.9f;
+            theta += 4.2f;
 
             GL.Begin(BeginMode.TriangleFan);
-            GL.Color3(Color.Red);
-            GL.Vertex2(0.0 - x, 0.5);
-            GL.Vertex2(-0.4 - x, 0.0);
-            GL.Vertex2(0.4 - x, 0.0);
-            GL.Color3(Color.Yellow);
-            GL.Vertex2(0.0 - x, -0.5);
-            GL.Vertex2(-0.4 - x, 0.0);
-            GL.Vertex2(0.4 - x, 0.0);
-            GL.End();
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0, 0.5);
+                GL.Vertex2(-0.4, 0.0);
+                GL.Vertex2(0.4, 0.0);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0, -0.5);
+                GL.Vertex2(-0.4, 0.0);
+                GL.Vertex2(0.4, 0.0);
+                GL.End();
 
-            GL.Begin(BeginMode.TriangleFan);
-            GL.Color3(Color.Red);
-            GL.Vertex2(0.0, 0.5 - x);
-            GL.Vertex2(-0.4, 0.0 - x);
-            GL.Vertex2(0.4, 0.0 - x);
-            GL.Color3(Color.Yellow);
-            GL.Vertex2(0.0, -0.5 - x);
-            GL.Vertex2(-0.4, 0.0 - x);
-            GL.Vertex2(0.4, 0.0 - x);
-            GL.Rotate(theta, 0.0f, 0.0f, 1.0f);
-            GL.End();
+                GL.Begin(BeginMode.TriangleFan);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0 + x, 0.5);
+                GL.Vertex2(-0.4 + x, 0.0);
+                GL.Vertex2(0.4 + x, 0.0);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0 + x, -0.5);
+                GL.Vertex2(-0.4 + x, 0.0);
+                GL.Vertex2(0.4 + x, 0.0);
+                GL.End();
+                //GL.Flush();
+                GL.Begin(BeginMode.TriangleFan);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0, 0.5 + x);
+                GL.Vertex2(-0.4, 0.0 + x);
+                GL.Vertex2(0.4, 0.0 + x);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0, -0.5 + x);
+                GL.Vertex2(-0.4, 0.0 + x);
+                GL.Vertex2(0.4, 0.0 + x);
+                GL.End();
+
+                GL.Begin(BeginMode.TriangleFan);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0 - x, 0.5);
+                GL.Vertex2(-0.4 - x, 0.0);
+                GL.Vertex2(0.4 - x, 0.0);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0 - x, -0.5);
+                GL.Vertex2(-0.4 - x, 0.0);
+                GL.Vertex2(0.4 - x, 0.0);
+                GL.End();
+
+                GL.Begin(BeginMode.TriangleFan);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0, 0.5 - x);
+                GL.Vertex2(-0.4, 0.0 - x);
+                GL.Vertex2(0.4, 0.0 - x);
+                GL.Color3(Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255)));
+                GL.Vertex2(0.0, -0.5 - x);
+                GL.Vertex2(-0.4, 0.0 - x);
+                GL.Vertex2(0.4, 0.0 - x);
+                GL.Rotate(theta, 0.0f, 0.0f, 1.0f);
+                GL.End();
+
+                GL.Begin(BeginMode.Polygon);
+                GL.Vertex2(0.0 + theta, 0.5);
+                GL.Vertex2(-0.4 + theta, 0.0);
+                GL.Vertex2(0.4 + theta, 0.0);
+                GL.End();
             //GL.Begin(BeginMode.Lines);
             //GL.Color3(Color.Yellow);
             //GL.Vertex2(0.0, 0.0f);
@@ -118,9 +147,17 @@ namespace ConsoleApplication
             //GL.Vertex2(0.5, 0.0f);
 
             //GL.End();
+            Console.WriteLine(x);
+            GL.PopMatrix();
+            GL.Rotate(theta, 0.0f, 0.0f, 1.1f);
 
-
-            GL.Rotate(theta, 0.0f, 0.0f, 1.0f);
+            GL.PushMatrix();
+            GL.Begin(BeginMode.Polygon);
+            GL.Vertex2(0.0 - theta, 0.5 );
+            GL.Vertex2(-0.4 - theta, 0.0 );
+            GL.Vertex2(0.4 - theta, 0.0 );
+            GL.End();
+            GL.PopMatrix();
             //GL.Begin(BeginMode.Triangles);
             //GL.Color3(Color.Blue);
             //GL.Vertex2(0.0f, 0.0f);
@@ -145,7 +182,7 @@ namespace ConsoleApplication
             //x += 0.001f;
             //y += 0.001f;
             //theta += 1.0f;
-            Thread.Sleep(10);
+            Thread.Sleep(1);
         }
 
     }
