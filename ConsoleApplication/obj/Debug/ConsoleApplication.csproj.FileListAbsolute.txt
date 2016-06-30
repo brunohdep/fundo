@@ -1,0 +1,16 @@
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\bin\Debug\OpenTK.dll
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\bin\Debug\OpenTK.xml
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+c:\users\wellington\documents\visual studio 2015\Projects\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\bin\Debug\OpenTK.xml
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\life-\OneDrive\Documentos\Computacao grafica\open-gl-samples-master\open-gl-samples-master\ConsoleApplication\bin\Debug\OpenTK.dll
